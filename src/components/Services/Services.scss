@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-top: 5px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
+
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card:hover {
+  border-top: 5px solid orange;
+//   box-shadow: 5px 5px 10px orange;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: 50px;
+  margin: 55px auto 5px auto;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}

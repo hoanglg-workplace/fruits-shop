@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .custom_dark-button,
+  .custom_orange-button,
+  .custom_disable-button {
+    @apply inline-block py-[10px] text-center w-36 outline-none text-[#f7f7f7];
+    border: 1px solid transparent;
+  }
+
+  .custom_dark-button {
+    @apply bg-black;
+  }
+
+  .custom_dark-button:hover {
+    @apply border border-black hover:text-black hover:bg-transparent;
+  }
+
+  .custom_orange-button {
+    @apply bg-orange-600;
+  }
+
+  .custom_orange-button:hover {
+    @apply border border-orange-600 hover:text-orange-600 hover:bg-transparent;
+  }
+
+  .custom_disable-button {
+    @apply bg-[#999999];
+  }
+
+  .custom_black_outline-button {
+    @apply inline-block py-[10px] text-center w-36 outline-none bg-white border-black text-black mx-1;
+    border: 1px solid black;
+  }
+
+  .custom_black_outline-button:hover {
+    @apply hover:text-white hover:bg-black transition-all;
+
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-md-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}

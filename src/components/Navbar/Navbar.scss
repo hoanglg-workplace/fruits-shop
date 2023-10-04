@@ -1,0 +1,89 @@
+// Nav Item
+
+.nav_label {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #aaa;
+}
+.nav_label,
+.nav_label:after,
+.nav_label:before {
+  transition: all 0.5s;
+}
+.nav_label:hover,
+.nav_label_active {
+  color: black;
+}
+
+.nav_label {
+  position: relative;
+}
+.nav_label:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav_label:hover:after {
+  width: 100%;
+}
+
+
+// Search Button
+.search {
+  margin: 20px;
+
+  div {
+    display: inline-block;
+    position: relative;
+    // filter: drop-shadow(0 1px #000);
+
+    input {
+      //   color: black;
+      font-size: 16px;
+      background: transparent;
+      width: 25px;
+      height: 25px;
+      padding: 10px 10px;
+      outline: none;
+      border-radius: 35px;
+      border: 1px solid black;
+      transition: width 0.5s;
+      cursor: pointer;
+    }
+
+    input::placeholder {
+      color: gray;
+      opacity: 0;
+      transition: opacity 150ms ease-out;
+    }
+
+    input:focus::placeholder {
+      opacity: 1;
+    }
+
+    input:focus,
+    input:not(:placeholder-shown) {
+      width: 200px;
+      cursor: unset;
+    }
+  }
+
+  div:after {
+    content: "";
+    background: black;
+    width: 4px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: -2px;
+    transform: rotate(135deg);
+  }
+}

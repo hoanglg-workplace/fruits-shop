@@ -1,8 +1,9 @@
 {
   "name": "fruits-shop",
   "homepage": "https://fruits-shop-hoangworkplace.vercel.app/",
-  "version": "0.1.0",
-  "private": true,
+  "author": {"email": "hoanglg.work@gmail.com", "name": "Lý Gia Hoàng"},
+  "version": "1.1.0",
+  "private": false,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@reduxjs/toolkit": "^1.9.5",
